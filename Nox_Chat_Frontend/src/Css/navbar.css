@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  backdrop-filter: blur(3px);
+  height: 100vh;
+    scrollbar-color: dark;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #212b36;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3939;
+}
+
+main {
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 6rem;
+  min-width: 6rem;
+  height: 100vh;
+  padding-top: 2rem;
+  background-color: #212b36;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.Icondiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.NavIcon {
+  width: 65x;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.iconsdiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavIcons {
+  margin-bottom: 2rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 10px;
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.4s ease-in;
+  align-items: center;
+}
+
+.divchat.active {
+  background-color: #2d99ff;
+}
+.divgroup.active {
+  background-color: #2d99ff;
+}
+.divcall.active {
+  background-color: #2d99ff;
+}
+.divsettings.active {
+  background-color: #2d99ff;
+}
+
+.divchat:hover {
+  background-color: #6e7277;
+}
+.divgroup:hover {
+  background-color: #6e7277;
+}
+.divcall:hover {
+  background-color: #6e7277;
+}
+.divsettings:hover {
+  background-color: #6e7277;
+}
+
+.navbar span {
+  color: #f9fafb;
+  font-weight: 1000;
+  font-size: 0.8rem;
+  margin: 0.3rem;
+}
+
+.navbar img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 2px solid #f9fafb;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar img:hover {
+  border: 2px solid #2d99ff;
+}
+
+.navbar hr {
+  margin-bottom: 1rem;
+  width: 80%;
+  border: 1px solid #494850;
+}
+
+.profile {
+  position: absolute;
+  top: 7%;
+  left: 4%;
+  width: 0%;
+  height: 0%;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff2d;
+  backdrop-filter: blur(20px);
+  background-blend-mode: overlay;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+  z-index: 4;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.profile.active {
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  width: 70vh;
+  height: 70vh;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff2d;
+  backdrop-filter: blur(20px);
+  background-blend-mode: overlay;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+  z-index: 6;
+  overflow: hidden;
+}
+
+.profileclose {
+    position: absolute;
+  z-index: 10;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile h1 {
+  position: absolute;
+  top: 1%;
+  font-size: 2rem;
+  color: #f9fafb;
+}
+
+.profileimgdiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f9fafb;
+  position: absolute;
+}
+
+.profileimgdiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3rem;
+  filter: blur(80px);
+  transition: all 0.8s ease-out;
+  border: none;
+  object-fit: cover;
+}
+
+.profile.active .profileimgdiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3rem;
+  filter: blur(0px);
+  border: none;
+  object-fit: cover;
+}
+
+
+.profileimgdiv img:hover {
+border: none;
+}
+
+.blackDiv{
+  position: absolute;
+  z-index: 9;
+  height: 100%;
+  width: 800%;
+  top: 63%;
+  background-color: black;
+  filter: blur(80px);
+}
+
+.profiledata textarea{
+      position: absolute;
+     bottom: -3.3rem;
+    left: 2rem;
+  z-index: 10;
+  width: 88%;
+  height: 20%;
+  color: #f9fafb;
+  border-radius: 19px;
+  padding-right: 1rem;
+  background-color: transparent;
+  font-weight: 500;
+  padding-top: 3px;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameUsername  {
+    position: absolute;
+    bottom: 4.3rem;
+    font-size: 2rem;
+    font-weight: 1000;
+    color: #f9fafb;
+    height: 5rem;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    left: 3rem;
+  z-index: 10;
+  margin-top: 1rem;
+}
+
+.nameUsername  .textarea1{
+
+    font-size: 2rem;
+    font-weight: 1000;
+    background-color: transparent;
+    width: max-content;
+    height: 2.3rem;
+    background-color: transparent;
+    color: #f9fafb;
+    border: none;
+    outline: none;
+  z-index: 10;
+  margin: 0;
+  border: 0;
+}
+
+.nameUsername  .textarea2{
+    font-size: 1.3rem;
+    font-weight: 1000;
+    width: 40%;
+    color: #f9fafb;
+     border: none;
+    outline: none;
+    background-color: transparent;
+    height: 2.3rem;
+ margin: 0;
+  border: 0;
+}
+
+.profilepara {
+    position: absolute;
+    bottom: 3.6rem;
+    font-size: 1rem;
+    color: #f9fafb;
+    left: 3rem;
+    font-weight: 600;
+  z-index: 10;
+  margin-top: 1rem;
+}
+
+
+.profiledata {
+  width: 60%;
+  height: 70%;
+  padding-right: 6%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+

@@ -1,0 +1,187 @@
+
+.profilewindow {
+  position: absolute;
+  top: 0;
+   left: 5%;
+  width: 90%;
+  height: 0;
+  border-radius: 3rem;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff2d;
+  backdrop-filter: blur(20px);
+  background-blend-mode: overlay;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+  z-index: 4;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.profilewindow.active {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  height: 55%;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background-color: #ffffff2d;
+  backdrop-filter: blur(20px);
+  background-blend-mode: overlay;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* .profilewindow.active allchats{
+    filter: blur(20px);
+} */
+
+.profileclose {
+    position: absolute;
+  z-index: 10;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile h1 {
+  position: absolute;
+  top: 1%;
+  font-size: 2rem;
+  color: #f9fafb;
+}
+
+.profileimgdiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f9fafb;
+  position: absolute;
+}
+
+.profileimgdiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3rem;
+  filter: blur(80px);
+  transition: all 0.8s ease-out;
+  border: none;
+  object-fit: cover;
+}
+
+.profilewindow.active .profileimgdiv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3rem;
+  filter: blur(0px);
+  border: none;
+  object-fit: cover;
+}
+
+
+.profileimgdiv img:hover {
+border: none;
+}
+
+.blackDiv{
+  position: absolute;
+  z-index: 9;
+  height: 100%;
+  width: 800%;
+  top: 63%;
+  background-color: black;
+  filter: blur(80px);
+}
+
+
+
+.nameUsernameprofile {
+    position: absolute;
+    bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 1000;
+    color: #f9fafb;
+    height: 6rem;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    left: 3rem;
+  z-index: 10;
+  margin-top: 1rem;
+}
+
+.name{
+
+    font-size: 2.8rem;
+    font-weight: 1000;
+    background-color: transparent;
+    width: max-content;
+    height: 2.3rem;
+    background-color: transparent;
+    color: #f9fafb;
+    border: none;
+    outline: none;
+  z-index: 10;
+  margin: 0;
+  border: 0;
+}
+
+.username{
+    font-size: 1rem;
+    font-weight: 1000;
+    width: 50%;
+    display: flex;
+    color: #f9fafb;
+     border: none;
+    outline: none;
+    padding-left: 0.2rem;
+    background-color: transparent;
+    height: 2.3rem;
+ margin: 0;
+  border: 0;
+}
+
+.joined {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 0.7rem;
+    color: #f9fafb;
+    left: 3rem;
+    font-weight: 600;
+    padding-left: 0.2rem;
+  z-index: 10;
+  margin-top: 1rem;
+}
+
+
+.profiledata {
+  width: 60%;
+  height: 70%;
+  padding-right: 6%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+

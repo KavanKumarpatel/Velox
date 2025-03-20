@@ -1,0 +1,334 @@
+.chatsetting {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 7;
+  right: 3rem;
+  height: 0;
+  width: 100%;
+  z-index: 3;
+  opacity: 0;
+  display: flex;
+  background-color: #212b36;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.chatsetting.active {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 7;
+  right: 3rem;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  opacity: 1;
+  display: flex;
+  background-color: #212b36;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+
+.groupsettings {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 7;
+  right: 3rem;
+  height: 0;
+  width: 100%;
+  z-index: 3;
+  opacity: 0;
+  display: flex;
+  background-color: #212b36;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.groupsettings.active {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 7;
+  right: 3rem;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  opacity: 1;
+  display: flex;
+  background-color: #212b36;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+.addMemberOUterDiv {
+  height: 6rem;
+  width: 100%;
+  border-top: 1px solid #212b36;
+  border-bottom: 1px solid #212b36;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  background-color: #161c24;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 1.3rem;
+  color: #c4cdd5;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in;
+}
+
+.addMemberOUterDiv:hover{
+  background-color: black;
+}
+
+
+.groupsettingsmembersdiv {
+  background-color: transparent;
+  width: 100%;
+  height: fit-content;
+  border-radius: 1rem;
+}
+
+
+.addMembers-article {
+  background-color: white;
+  height: 1%;
+  width: 100%;
+  position: absolute;
+ top: -15rem;
+  left: 0rem;
+  opacity: 0;
+  z-index: -30;
+  transition: all 0.4s ease-out;
+  background-color: #ffffff1d;
+  backdrop-filter: blur(100px);
+}
+
+.addMembers-article.active {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  z-index: 12;
+  background-color: #ffffff1d;
+  backdrop-filter: blur(150px);
+}
+
+.addMembers {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1.2rem;
+}
+
+.groupsettingsonline{
+   background-color: lightgreen;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 50%;
+  left: 50px;
+  bottom: 9px;
+}
+
+.groupsettingsmembers {
+  height: 4.6rem;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #212b36;
+  border-bottom: 1px solid #212b36;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  background-color: #161c24;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #c4cdd5;
+  border-radius: 1rem;
+  position: relative;
+  transition: all 0.4s ease-in;
+}
+
+.groupsettingsmembers:hover{
+  background-color: #111;
+}
+
+.AddMembersButton {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  background-color: #2d99ff;
+}
+
+.groupsettingsimage {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.gsimagediv {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gsimage {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 2rem;
+  object-fit: cover;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.gsremovebtn {
+  width: 20%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #2d99ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+
+.gsremovebtn:hover {
+  color: red;
+}
+
+.gsexit {
+  height: 6rem;
+  width: 100%;
+  border-top: 1px solid #212b36;
+  border-bottom: 1px solid #212b36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #161c24;
+  border-radius: 1rem;
+}
+
+.gsexit:hover{
+  background-color: black;
+}
+
+.gsexitbtn {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  outline: none;
+  color: rgb(210, 77, 28);
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #161c24;
+  position: relative;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.gsexitbtn:hover {
+  color: red;
+  background-color: black;
+}
+
+.clearchatdiv {
+  height: 4rem;
+  width: 100%;
+  border-top: 1px solid #212b36;
+  border-bottom: 1px solid #212b36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  background-color:#161c24;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.clearchatdiv:hover{
+  background-color: black;
+}
+
+
+.clearchat {
+  width: 50%;
+  height: 3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #c4cdd5;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.3rem;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.clearchat:hover {
+  color: #2d99ff;
+}

@@ -1,0 +1,541 @@
+.allchats {
+  width: 30rem;
+  height: 100vh;
+  background-color: #161c24;
+  position: relative;
+  z-index: 4;
+}
+
+.allchats.lightblur .allchats-header {
+  filter: blur(3px);
+}
+.allchats.lightblur .allchats-users {
+  filter: blur(3px);
+}
+
+.allchats-header {
+  height: 23vh;
+  width: 30rem;
+  position: absolute;
+  background-color: #161c24;
+  z-index: 1;
+  transition: all 0.4s ease-in;
+}
+
+.allchats-div {
+  color: #dfe3e8;
+  width: 100%;
+  height: 5rem;
+  padding-left: 7%;
+  padding-right: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.allchats-div1 {
+  color: #dfe3e8;
+  width: 100%;
+  height: 5rem;
+  padding-left: 7%;
+  padding-right: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.allchats h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.headerAllChats {
+  height: 100%;
+  width: 40%;
+}
+
+.notificationBadge {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.notificationBadge p {
+  font-size: 0.8rem;
+  font-weight: 1000;
+}
+
+.allchats-notifications {
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-out;
+  position: relative;
+  z-index: 5;
+}
+
+.allchats-notifications:hover {
+  background-color: #212b36;
+}
+
+.notificationHeading {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications-article {
+  background-color: white;
+  height: 0;
+  width: 0;
+  max-width: 0rem;
+  border-radius: 1.3rem;
+  position: relative;
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0;
+  transition: 0.4s ease-out;
+  background-color: #ffffff1d;
+  backdrop-filter: blur(200px);
+}
+
+.notifications-article.active {
+  background-color: white;
+  height: 60vh;
+  width: 70vw;
+  max-width: 18rem;
+  opacity: 1;
+  border-radius: 1.3rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.3rem;
+  opacity: 1;
+  z-index: 9;
+  background-color: #ffffff1d;
+  backdrop-filter: blur(60px);
+}
+
+.notifications-article1 {
+  background-color: white;
+  height: 0;
+  width: 0;
+  max-width: 0rem;
+  border-radius: 1.3rem;
+  position: relative;
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  opacity: 0;
+  transition: 0.4s ease-out;
+  background-color: #ffffff1d;
+  backdrop-filter: blur(200px);
+}
+
+.containerbox {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  border-radius: 12px;
+  margin-left: 250px;
+  border: 2px solid black;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+}
+
+.containerbox:hover {
+  transform: scale(1.02);
+}
+
+.responseanswer {
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+/* Make only the response div scrollable */
+#response {
+  flex-grow: 1; /* Takes all available space */
+  overflow-y: auto; /* Allows scrolling */
+  margin-top: 10px;
+  max-height: 420px; /* Limit height so it scrolls */
+}
+
+/* Keep bottom section fixed */
+.backgrounddetails {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Align content to the left */
+  position: relative; /* Needed for absolute positioning */
+}
+
+.backbutton {
+  position: absolute;
+  top: 20px; /* Adjust distance from the top */
+  left: 20px; /* Position at the left corner */
+  width: 50px;
+  height: 50px;
+  background-color: #0ebded; /* Change color as needed */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.bottomcss {
+  display: flex;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-right: 15px;
+  border: 2px solid black;
+  border-radius: 12px;
+  width: 900px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  overflow-y: auto; /* Makes only input field scrollable */
+}
+
+.btn-success1 {
+  background-color: #0ebded;
+  padding: 7px;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+.homepagecss {
+  height: 100vh;
+  gap: 10px;
+  padding: 20px;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+}
+
+.headtextcss {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.headtextcss1 {
+  font-size: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.innerbottomcss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.inputfieldcss {
+  width: 250px;
+  padding: 12px;
+  border: 2px solid #0ebded;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputfieldcss:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+.buttoncss {
+  padding: 12px 18px;
+  border: none;
+  margin-left: 15px;
+  background-color: #0ebded;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttoncss:hover {
+  background-color: #0077b6;
+  transform: scale(1.05);
+}
+
+.notifications-article1.active {
+  background-color: white;
+  height: 90vh;
+  width: 70vw;
+  max-width: 60rem;
+  opacity: 1;
+  border-radius: 1.3rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.3rem;
+  opacity: 1;
+  z-index: 9;
+  background-color: #ffffff1d;
+  backdrop-filter: blur(60px);
+}
+
+.backbutton {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.backgrounddetails {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.allchats-addgroup {
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-out;
+  position: relative;
+  z-index: 5;
+}
+
+.allchats-addgroup:hover {
+  background-color: #212b36;
+}
+
+.allchats hr {
+  border: 1px solid #212b36;
+  width: 86%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.search-div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+}
+
+.search {
+  width: 88%;
+  height: 3rem;
+  color: #f9fafb;
+  margin: 6%;
+  border-radius: 25px;
+  background-color: #212b36;
+  padding: 8px 8px;
+  padding-right: 3rem;
+  border: none;
+  outline: none;
+  padding-left: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.allchats-users {
+  width: 30rem;
+  padding-top: 23vh;
+  padding-bottom: 25vh;
+  height: 100vh;
+  z-index: 0;
+  overflow-y: scroll;
+  transition: all 0.4s ease-in;
+}
+
+.person-div {
+  background-color: #212b36;
+  height: 5rem;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 1rem;
+  margin-top: 0.2rem;
+  /* border-radius: 1rem;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 1.3%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #f9fafb;
+  position: relative;
+}
+
+.person-dp {
+  width: 110px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.online {
+  background-color: lightgreen;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 50%;
+  left: 56px;
+  bottom: 7px;
+}
+
+.person-image {
+  width: 70x;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 13px;
+  border: 0.8px solid white;
+}
+
+.logofieldcss {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+
+.logocss {
+  height: 50px;
+  width: 50px;
+}
+
+.headtextcss2 {
+  font-size: 25px;
+  margin-left: 10px;
+  color: white;
+}
+
+.group-image {
+  width: 55x;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #2d99ff;
+  object-fit: cover;
+  position: absolute;
+  left: 20px;
+  background-color: #637381;
+  border: 1px solid #212b36;
+}
+
+.groupbg2 {
+  width: 48px;
+  height: 48px;
+  rotate: -12deg;
+  border-radius: 10px;
+  background-color: #454f5b;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  border: 1px solid #212b36;
+}
+.groupbg1 {
+  width: 40px;
+  height: 40px;
+  rotate: -24deg;
+  border-radius: 10px;
+  background-color: #637381;
+  position: absolute;
+  left: 11px;
+  top: 20px;
+  border: 1px solid #212b36;
+}
+
+.person-details {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #f9fafb;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.person-details h5 {
+  font-size: 1rem;
+}
+
+.person-div span {
+  font-size: 0.7rem;
+}
+
+.person-time {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-weight: 600;
+}
+
+.person-notification-count {
+  position: absolute;
+  right: 30px;
+  bottom: 13px;
+  font-weight: 600;
+  background-color: #2d99ff;
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
