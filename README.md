@@ -30,26 +30,26 @@ bash
 Copy code
 git clone https://github.com/KavanKumarpatel/Velox.git
 cd Velox
-##🔹 Step 2: Configure Backend Environment
+## 🔹 Step 2: Configure Backend Environment
 📄 Rename the .Simpleenv file to .env in the Nox_chat_Backend folder.
 🛠️ Change the port number in the .env file to:
 
 ini
 Copy code
 PORT=5000
-##🔹 Step 3: Configure Frontend Environment
+## 🔹 Step 3: Configure Frontend Environment
 📄 In the Frontend folder, create a .env file and add the following:
 
 ini
 Copy code
 VITE_SERVER="http://localhost:5000"
-##🔹 Step 4: Install Dependencies
+## 🔹 Step 4: Install Dependencies
 ⚙️ Run the following command in both frontend and backend folders to install the required packages:
 
 bash
 Copy code
 npm install
-##🔹 Step 5: Connect Database
+## 🔹 Step 5: Connect Database
 💾 To start the backend and establish a database connection:
 
 bash
@@ -58,7 +58,7 @@ cd Nox_chat_Backend
 npm start
 ✅ Ensure the database connection is successful before proceeding.
 
-##🔹 Step 6: Start the Frontend
+## 🔹 Step 6: Start the Frontend
 🌐 To launch the frontend application:
 
 bash
