@@ -52,6 +52,32 @@ Follow these clear instructions to configure and run Velox on your local system 
 ## 🎯 You're all set! Enjoy using Velox for seamless real-time communication. 🚀
 
 
+## 1. 🔐 Login or 📝 Signup Page
+![WhatsApp Image 2025-03-20 at 20 54 59_7d8b8e4b](https://github.com/user-attachments/assets/f2ad0959-ae3d-4096-9893-feee79f4de65)
+
+## 2.📢 Notification for Adding a Person 👤
+![WhatsApp Image 2025-03-20 at 20 54 59_dedae4af](https://github.com/user-attachments/assets/d15f84ae-9932-46e8-ad68-275ee33c7182)
+
+## 📅💬 3. Scheduling messages to anyone, anytime — and exploring the Velox Verse! 🌌
+![WhatsApp Image 2025-03-20 at 20 54 55_5070faab](https://github.com/user-attachments/assets/03cf186f-7351-4606-bde7-18ede01b687d)
+![WhatsApp Image 2025-03-20 at 20 54 59_0c264171](https://github.com/user-attachments/assets/33da69ee-0cba-4d48-a856-d6406a4f3079)
+
+## 🧠💬 4.Velox AI and 🎥📞 Video Chat
+![WhatsApp Image 2025-03-20 at 20 54 58_fccbadb3](https://github.com/user-attachments/assets/a9544f73-b8f0-4d67-8262-6450cce2c5df)
+![WhatsApp Image 2025-03-20 at 20 54 59_44e78f29](https://github.com/user-attachments/assets/238be39a-38d4-419c-b1ff-ca15df24ebb0)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
