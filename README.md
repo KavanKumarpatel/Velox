@@ -26,10 +26,9 @@ Velox embodies the future of communication platforms, setting a new standard for
 Follow these clear instructions to configure and run Velox on your local system efficiently.
 
 ## 🔹 Step 1: Clone the Repository
-bash
-Copy code
-git clone https://github.com/KavanKumarpatel/Velox.git
-cd Velox
+
+# git clone https://github.com/KavanKumarpatel/Velox.git
+# cd Velox
 ## 🔹 Step 2: Configure Backend Environment
 📄 Rename the .Simpleenv file to .env in the Nox_chat_Backend folder.
 🛠️ Change the port number in the .env file to:
