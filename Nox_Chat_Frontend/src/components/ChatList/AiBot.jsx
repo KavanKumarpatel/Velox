@@ -37,7 +37,7 @@ const AiBot = () => {
         method: "POST",
         headers: {
           Authorization:
-            "Bearer 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",
+            "Bearer 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",
           "HTTP-Referer": "https://www.sitename.com",
           "X-Title": "SiteName",
           "Content-Type": "application/json",
